@@ -1,9 +1,9 @@
 ---
 title: AT is not going to change?
 short: Times are changing - how is Auckland Transport reacting to these challenges
-layout: default
+layout: post
 category: blog
-modal-id: 1
+modal-id: 2
 date: 2016-08-15 11:00:00 +1200
 description: We are just getting started - through AT Labs, we envision ideas to emerge from all sides, either under the umbrella of Auckland Transport or as new businesses, to advance the future of Auckland
 

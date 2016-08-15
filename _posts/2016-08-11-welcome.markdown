@@ -1,0 +1,22 @@
+---
+title: Welcome to AT Labs
+short: Come and have a look at how you can contribute to Auckland Transport with your ideas!
+layout: post
+category: blog
+modal-id: 1
+date: 2016-08-11 17:00:00 +1200
+description: Some description
+
+---
+
+# Why are we doing this?
+
+Interesting question. We decided to make our data available ... well, because it is YOUR 
+data: roads, buses, trains, ferries. Auckland Transport is "just" ensuring that you can 
+use your car, or public transport to get to places.
+
+
+# Why contribute?
+
+
+# How to contribute

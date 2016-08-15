@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
             {% for post in site.categories.[page.layout] %}
-                <div class="col-md-4 col-sm-6 portfolio-item">
+                <!--div class="col-md-4 col-sm-6 portfolio-item">
                     <a href="#portfolioModal{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
@@ -16,7 +16,14 @@
                         <h4 class="bold">{{ post.title }}</h4>
                         <p class="text-muted">{{ post.short }}</p>
                     </div>
-                </div>
+                </div-->
+                 <li>
+                    <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+                    <h2>
+                      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
+                    </h2>
+                  </li>
             {% endfor %}
             </div>
         </div>
