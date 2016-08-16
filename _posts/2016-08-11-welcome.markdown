@@ -3,20 +3,44 @@ title: Welcome to AT Labs
 short: Come and have a look at how you can contribute to Auckland Transport with your ideas!
 layout: post
 category: blog
-modal-id: 1
 date: 2016-08-11 17:00:00 +1200
-description: Some description
 
 ---
 
+Auckland Transport is looking after Auckland's transport network - roads & cycleways, traffic, parking, public transport. Until recently, though, it "did its thing" in a bit of an isolated way. This is where the Auckland Transport Innovation Portal comes in: we'd like to open up the digital side of Auckland Transport.
+
 # Why are we doing this?
 
-Interesting question. We decided to make our data available ... well, because it is YOUR 
-data: roads, buses, trains, ferries. Auckland Transport is "just" ensuring that you can 
-use your car, or public transport to get to places.
+Honestly, we could do with some help - from Aucklanders, who want to get around their city easier, quicker, and safer. We believe that by inviting people to contribute we get better ideas, and faster execution - both which benefits all Aucklanders.
 
+We like the idea of experiments: Better than committing to a year-long software development project; we'd like to develop an idea, test it against the market (Auckland) quickly (in weeks, not months or years), and continuously improve it. And this is something a community of software developers and ideas people excels at.
 
 # Why contribute?
 
+We know there are plenty of ideas "out there", plenty of people who would like to leave their mark on their city - and a whole lot of software developers who want to do more than customise reporting software, integrate financial transaction systems, or churn out one website after another.
+
+Auckland Transport is not for profit; it is to make you get to where you want to go. You aren't making somebody else rich - you are improving life in your city, and, who knows, perhaps even the life of people in cities around the world.
 
 # How to contribute
+
+For now, we decided to make this about people with ideas for software applications, and software developers (and a special welcome to developers with ideas).
+
+**Idea contributions**
+
+Do you have an idea that will revolutionise transport? Or a seemingly small improvement that will make our lives so much better? Great, we want to hear them all - this is what our [ideas forum]() is about. We are here to connect the idea with people with expertise in this area, and people who can implement it. If the idea is a good one, then there should be no problem finding many helping hands - and we'll chip in too, wherever we can.
+
+We understand that your idea is important to you - especially if it is an idea for a new product or service. We want to keep you engaged throughout the implementation cycle, and credit you for your idea. However, we also want to make your idea the best it can be, so we take the opinions of our experts strongly into consideration. This collaboration means your idea might not turn out exactly as you envisioned, but hopefully better.
+
+Please note that this is about ideas for software applications. While we all would like to get that pothole fixed, and an in-bus relaxation massage service, for now, we are looking to make Auckland better through software. We aren't saying that your idea can't have a physical component to it. The most interesting ideas are often a combination of hardware and software.
+
+**Code contributions**
+
+At heart, we are coders too. We understand that this strange combination of working out software challenges, perhaps while learning a new language or technology, and seeing something coming out that people use, and like to use, is very fulfilling. This is why we go to work, and to bed way too late at night.
+
+Do you have an idea, but don't know how to go about it? Leave us a message in the [ideas forum](), and we'll be in contact. And if you are looking for ideas: Join us at the same forum, there ought to be something for you.
+
+Useful next steps are to look in the [getting started]() section, and have a look through the [API]() to see what data is available. We put some [sample code]() up, so you can get some insights on how to use the API. If you have a question, need some help - or perhaps missing data, let us know through the [developer forum](). It works pretty much like Stack Exchange, so no surprises there.
+
+We haven't (yet) worked out exactly how getting your code shipped will work. Generally speaking, we'd like the code to stay your code. Just create some project repository with your repo provider of choice (we like [github](https://github.com/)) - or fork [our ones](). If you need help with your code, continuous integration, testing, infrastructure, or getting it into an app store, get in [contact]() with us, and we should be able to help you out.
+
+We are looking to work out a better process for this - but would like to take your inputs on how you think it should work. Stay tuned.

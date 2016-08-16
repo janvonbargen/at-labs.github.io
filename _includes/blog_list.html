@@ -1,0 +1,16 @@
+<!-- Portfolio Grid Section -->
+    <section id="blog" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+            {% for post in site.categories.[page.layout] %}
+                 <div class="col-md-12 col-sm-12 blog-item">
+                        <h2>{{ post.title | escape }}
+                        </h2>
+                        <div class="date">{{ post.date | date: "%b %-d, %Y" }}</div>
+                        <p><b>{{ post.short }}</b> {{ post.content | strip_html | truncatewords: 50 }} <a href="{{ post.url | prepend: site.baseurl }}" title="Permalink to: {{ post.title }}" class="read-more">Read more &raquo;</a></p>
+                     
+                  </div>
+            {% endfor %}
+            </div>
+        </div>
+    </section>
