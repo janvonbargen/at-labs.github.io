@@ -6,6 +6,10 @@ title: ATLab - Ideas for Auckland
 email: test@domain.com
 description: "Test description."
 
+timezone: Pacific/Auckland
+markdown: kramdown
+highlighter: rouge
+
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: twitter

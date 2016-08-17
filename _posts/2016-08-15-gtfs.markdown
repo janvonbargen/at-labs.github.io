@@ -1,10 +1,43 @@
 ---
 title: GTFS
-short: ...
+short: Getting started with the GTFS API
 layout: post
 category: gettingstarted
 date: 2016-08-15 14:00:00 +1200
 
 ---
 
-...
+Most of the public transport data available follow the model of Google's Transit Feed Specification (GTFS). A good place to start is [Google Transit Reference](https://developers.google.com/transit/gtfs/reference/) - this will tell you a lot about the domain, for example, routes, trips, or calendars.
+
+In a nutshell:
+
+**Versions**
+
+The transport network is regularly changing: routes are changed, stops are created, removed or relocated, times change, etc. The data "underneath" therefore is versioned. GTFS allows for changes - which is what calendars are for. However, Auckland Transport's internal planning systems are a little more restrictive, which forces us to add version indicators to all identifiers.
+
+It is thus worth noting that you need to be careful with caching. And, like most identifier, don't try to read anything into them. Sure, an ID like ```71302-20160803113210_v43.25``` looks like bus 713, and version 43.25 created on the August 3<sup>rd</sup> - but that might change, so please treat it as a "string thing".
+
+**Agency**
+
+> An Agency is an operator of a public transit network, often a public authority.
+
+For Auckland Transport, these are the different bus, train, and ferry operators, like Sea Link (ferry), Sky Bus (bus to airport), Ritchies (bus), or AT Metro (trains).
+
+**Route**
+
+> GTFS Routes are equivalent to "Lines" in public transportation systems.
+
+A route, in Auckland terms, is, for example, bus 334, "Otahuhu To Britomart Via Mangere Town Centre". Routes can change over time.
+
+**Trip**
+
+> A Trip represents a journey taken by a vehicle through Stops.
+
+By example, a trip is bus 334, "Otahuhu To Britomart Via Mangere Town Centre", leaving "Platform 1a Otahuhu" at 14:00:00, and arriving at "71 Customs St East" at 15:25:00, Monday to Friday.
+
+From a model perspective, the *trip* ties together the *route* (Bus 334, "Otahuhu To Britomart Via Mangere Town Centre"), a series of *stop times* (14:00:00 - Stop 8098; [63 other stops]; 15:25:00 - Stop 7021) - these can then be resolved to the *stops* (8098="Platform 1a Otahuhu"; 7021="71 Customs St East") - and a *calendar* (Monday-Friday).
+
+**Stop Times**
+
+> A StopTime defines when a vehicle arrives at a location, how long it stays there, and when it departs.
+
