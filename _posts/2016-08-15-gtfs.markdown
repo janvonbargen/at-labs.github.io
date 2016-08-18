@@ -1,35 +1,39 @@
 ---
-title: GTFS
+title: GTFS API
 short: Getting started with the GTFS API
 layout: post
 category: gettingstarted
-date: 2016-08-15 14:00:00 +1200
+date: 2016-08-15 16:00:00 +1200
 
 ---
 
 Most of the public transport data available follow the model of Google's Transit Feed Specification (GTFS). A good place to start is [Google Transit Reference](https://developers.google.com/transit/gtfs/reference/) - this will tell you a lot about the domain, for example, routes, trips, or calendars.
 
-In a nutshell:
+**Naming Convention**
 
-**Versions**
+The API uses the GTFS convention - snake case - as its naming convention. You may not like the underscores, but this is the easiest if you want to re-use their documentation. Please don't ask for camel/pascal/random case.
+
+**Versions & Identifiers**
 
 The transport network is regularly changing: routes are changed, stops are created, removed or relocated, times change, etc. The data "underneath" therefore is versioned. GTFS allows for changes - which is what calendars are for. However, Auckland Transport's internal planning systems are a little more restrictive, which forces us to add version indicators to all identifiers.
 
-It is thus worth noting that you need to be careful with caching. And, like most identifier, don't try to read anything into them. Sure, an ID like ```71302-20160803113210_v43.25``` looks like bus 713, and version 43.25 created on the August 3<sup>rd</sup> - but that might change, so please treat it as a "string thing".
+It is thus worth noting that you need to be careful with caching. And, like most identifier, don't try to read anything into them. Sure, an ID like "71302-20160803113210_v43.25" looks like bus 713, and version 43.25 created on the August 3<sup>rd</sup> - but that might change, so please treat it as a "string thingy".
 
-**Agency**
+So, GTFS in a nutshell, with a few Auckland specific details worth noting:
+
+# Agency
 
 > An Agency is an operator of a public transit network, often a public authority.
 
 For Auckland Transport, these are the different bus, train, and ferry operators, like Sea Link (ferry), Sky Bus (bus to airport), Ritchies (bus), or AT Metro (trains).
 
-**Route**
+# Route
 
 > GTFS Routes are equivalent to "Lines" in public transportation systems.
 
 A route, in Auckland terms, is, for example, bus 334, "Otahuhu To Britomart Via Mangere Town Centre". Routes can change over time.
 
-**Trip**
+# Trip
 
 > A Trip represents a journey taken by a vehicle through Stops.
 
@@ -37,7 +41,61 @@ By example, a trip is bus 334, "Otahuhu To Britomart Via Mangere Town Centre", l
 
 From a model perspective, the *trip* ties together the *route* (Bus 334, "Otahuhu To Britomart Via Mangere Town Centre"), a series of *stop times* (14:00:00 - Stop 8098; [63 other stops]; 15:25:00 - Stop 7021) - these can then be resolved to the *stops* (8098="Platform 1a Otahuhu"; 7021="71 Customs St East") - and a *calendar* (Monday-Friday).
 
-**Stop Times**
+# Stop Time
 
 > A StopTime defines when a vehicle arrives at a location, how long it stays there, and when it departs.
+
+This one should be obvious: It defines the scheduled arrival and departure time at each stop for a trip.
+
+# Stop
+
+> A stop is a location where vehicles stop to pick up or drop off passengers.
+
+This one should also be fairly obvious: A bus stop, train station or ferry pier.
+
+Most bus stops have "parent" stops, which usually indicates a bus stop on each side of the road. For example, stop 11522 ("Mountain Rd and Morrow") is the parent for 8600 and 8601. It is worth noting here that the child stops can have different geographical locations, and also names. For example, 8600 is called "Gillies Ave near Morrow St", and 8601 is "5 Gillies Ave". Some bus stops are also the "single child" of a parent stop. Though, don't rely on all bus stops having a parent.
+
+Train stations, at the moment, are single stops without parents. The reason for that is that platforms in stations are currently allocated dynamically; linking platform stops to trips would mean the GTFS constantly needs to be regenerated. So, from a GTFS point of view, all trains passing through a station pass by a single stop.
+
+Note that the value for `stop_id` happens to be the same as for `stop_code`. Don't bank on it, and don't try to use the ID to look up stops by code.
+
+# Calendar
+
+> Services define a range of dates between which a Trip is available, the days of the week when it is available (such as Monday through Friday)
+
+GTFS separates calendars out to allow re-use between trips. At Auckland Transport, due to how the schedules are generated, a trip and a calendar form a 1:1 relation - one calendar for each trip. This relationship may change in future, though, so please don't base your code on this assumption.
+
+# Calendar Dates/Calendar Exceptions
+
+> You can use this to define exceptional days when the Trip is operated, as well as when it is not operated.
+
+Nothing particular to note. It is defined, though, and must be used to determine if a particular service runs for a given date.
+
+# Shapes
+
+> Shapes describe the physical path that a vehicle takes
+
+A call to shapes, for a given trip, returns a sequence of points (geographical locations).
+
+The attribute `shape_dist_traveled` is not set.
+
+# Frequencies
+
+Frequencies are not used at the moment. Auckland's Link buses, to which this could apply, run on a schedule like all other buses, trains and ferries.
+
+# Fare Rules/Attributes
+
+Not in use, at the moment. Until recently, the fares structure for Auckland was too difficult to be accurately reflected in the GTFS fares structures. With the recent introduction of zone-based fares, this may now be possible. Please [contact us]() if this would be useful for your project.
+
+Please also see the [Farecalculator API]() to get fares for trips.
+
+# Feed Info
+
+> The file contains information about the feed itself, rather than the services that the feed describes.
+
+This API is probably less of interest if you consume the API directly, but is useful if you want to download the GTFS feed directly: It contains the version number, as well as start and end dates for that version.
+
+Note that a new version can be published before the stated end date. However, the data up to that end date will (should) stay the same.
+
+Please refer to [AT Google Transit Feed](https://at.govt.nz/bus-train-ferry/more-services/google-transit-feed/) to download the GTFS feed directly.
 
