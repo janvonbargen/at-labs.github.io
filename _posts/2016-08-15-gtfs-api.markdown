@@ -7,6 +7,8 @@ date: 2016-08-15 16:00:00 +1200
 
 ---
 
+The purpose of the GTFS API is to make public transport routes and schedules available. At the moment, the API supports routes, trips, stops, calendars and agencies (see below for further details). Fares and transfers are not provided (yet?).
+
 Most of the public transport data available follow the model of Google's Transit Feed Specification (GTFS). A good place to start is [Google Transit Reference](https://developers.google.com/transit/gtfs/reference/) - this will tell you a lot about the domain, for example, routes, trips, or calendars.
 
 **Naming Convention**
@@ -31,7 +33,22 @@ For Auckland Transport, these are the different bus, train, and ferry operators,
 
 > GTFS Routes are equivalent to "Lines" in public transportation systems.
 
-A route, in Auckland terms, is, for example, bus 334, "Otahuhu To Britomart Via Mangere Town Centre". Routes can change over time.
+A route, in Auckland terms, is, for example, bus 334 (`route_short_name`), "Otahuhu To Britomart Via Mangere Town Centre" (`route_long_name`). The record itself is mostly for display purposes - the *trip* (see below) ties it to the schedule.
+
+**But**: Usually GTFS defines one route (for example 334), and several trips reference it to identify inbound and outbound directions, different schedules for weekdays and weekends, etc. At Auckland Transport, because of internal processing, this works a bit differently. Multiple route records usually exist for one "service" (334), one for each direction, and sometimes also for partial routes and different stop sequences. So, compared to how GTFS should be, there are routes that should be one route, and routes that have the same service number, but should perhaps have different numbers.
+
+For example, the service 334, as mentioned above, is eight routes, all with the same `route_short_name` (334):
+
+1. Otahuhu To Britomart Via Mangere Town Centre (33401)
+2. Britomart To Otahuhu Via Mangere Town Centre (33402)
+3. Otahuhu To Britomart Via Massey Rd (33403)
+4. Britomart To Otahuhu Via Massey Rd (33404)
+5. Otahuhu To Onehunga Via Mangere Town Centre (33405)
+6. Onehunga To Otahuhu Via Mangere Town Centre (33406)
+7. Otahuhu To Onehunga Via Massey Rd (33407)
+8. Onehunga To Otahuhu Via Massey Rd (33408)
+
+1&2, in this example, illustrate different directions, 1&3 different stop sequences, and 1&5 illustrate partial routes.
 
 # Trip
 
@@ -83,6 +100,10 @@ The attribute `shape_dist_traveled` is not set.
 
 Frequencies are not used at the moment. Auckland's Link buses, to which this could apply, run on a schedule like all other buses, trains and ferries.
 
+# Transfers
+
+Transfers are not used at the moment.
+
 # Fare Rules/Attributes
 
 Not in use, at the moment. Until recently, the fares structure for Auckland was too difficult to be accurately reflected in the GTFS fares structures. With the recent introduction of zone-based fares, this may now be possible. Please [contact us]() if this would be useful for your project.
@@ -98,4 +119,3 @@ This API is probably less of interest if you consume the API directly, but is us
 Note that a new version can be published before the stated end date. However, the data up to that end date will (should) stay the same.
 
 Please refer to [AT Google Transit Feed](https://at.govt.nz/bus-train-ferry/more-services/google-transit-feed/) to download the GTFS feed directly.
-
