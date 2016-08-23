@@ -17,11 +17,13 @@ The API uses the GTFS convention - snake case - as its naming convention. You ma
 
 **Versions & Identifiers**
 
-The transport network is regularly changing: routes are changed, stops are created, removed or relocated, times change, etc. The data "underneath" therefore is versioned. GTFS allows for changes - which is what calendars are for. However, Auckland Transport's internal planning systems are a little more restrictive, which forces us to add version indicators to all identifiers.
+The transport network is regularly changing: routes are changed, stops are created, removed or relocated, times change, etc. The data "underneath" therefore is versioned. GTFS allows for changes - which is what calendars are designed to do. However, Auckland Transport's internal planning systems are a little more restrictive, which forces us to add version indicators to many identifiers.
 
-It is thus worth noting that you need to be careful with caching. And, like most identifier, don't try to read anything into them. Sure, an ID like "71302-20160803113210_v43.25" looks like bus 713, and version 43.25 created on the August 3<sup>rd</sup> - but that might change, so please treat it as a "string thingy".
+For example, the service 334 has a *route* "Otahuhu To Britomart Via Mangere Town Centre" with the ID "33401-20160803113210\_v43.25", but also a *route* with the ID "33401-20160729161628\_v43.23". These are the same route, but different versions for different date ranges, and potentially different stop sequences. See below for further details around *routes* and *trips*.
 
-So, GTFS in a nutshell, with a few Auckland specific details worth noting:
+And, like most identifier, don't try to read anything into them. Sure, an ID like "71302-20160803113210\_v43.25" looks like bus 713, and version 43.25 created on the August 3<sup>rd</sup> - but that might change, so please treat it as a "string thingy".
+
+The following sections are about GTFS - in a nutshell -, with a few Auckland specific details worth noting:
 
 # Agency
 
@@ -50,6 +52,8 @@ For example, the service 334, as mentioned above, is eight routes, all with the 
 
 1&2, in this example, illustrate different directions, 1&3 different stop sequences, and 1&5 illustrate partial routes.
 
+On this topic, it is also worth pointing again to the *Versions & Identifiers* section above, which describes multiple versions of the same route at the same time.
+
 # Trip
 
 > A Trip represents a journey taken by a vehicle through Stops.
@@ -57,6 +61,8 @@ For example, the service 334, as mentioned above, is eight routes, all with the 
 By example, a trip is bus 334, "Otahuhu To Britomart Via Mangere Town Centre", leaving "Platform 1a Otahuhu" at 14:00:00, and arriving at "71 Customs St East" at 15:25:00, Monday to Friday.
 
 From a model perspective, the *trip* ties together the *route* (Bus 334, "Otahuhu To Britomart Via Mangere Town Centre"), a series of *stop times* (14:00:00 - Stop 8098; [63 other stops]; 15:25:00 - Stop 7021) - these can then be resolved to the *stops* (8098="Platform 1a Otahuhu"; 7021="71 Customs St East") - and a *calendar* (Monday-Friday).
+
+The identifiers for trips - just like *routes* - are versioned. See section *Versions & Identifiers* above for details.
 
 # Stop Time
 
@@ -81,6 +87,8 @@ Note that the value for `stop_id` happens to be the same as for `stop_code`. Don
 > Services define a range of dates between which a Trip is available, the days of the week when it is available (such as Monday through Friday)
 
 GTFS separates calendars out to allow re-use between trips. At Auckland Transport, due to how the schedules are generated, a trip and a calendar form a 1:1 relation - one calendar for each trip. This relationship may change in future, though, so please don't base your code on this assumption.
+
+The identifiers for calendars - just like *routes* - are versioned. See section *Versions & Identifiers* above for details.
 
 # Calendar Dates/Calendar Exceptions
 
