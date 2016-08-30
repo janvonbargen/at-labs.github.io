@@ -13,6 +13,10 @@ The tools API covers miscellaneous "tools" - at the moment, the journey planner 
 
 # Journey Planner
 
+{:refdef: .warning}
+The API for the geo coder is currently "public restricted", i.e. only available to partners. Please [contact us]() to either make it public, or get a partner access key.
+{:refdef}
+
 The journey planner API, as the name suggests, connects to an Auckland Transport system that allows users to plan their journeys. Given a start and end point, time, and some preferences, it calculates a few suggestions for journeys, including walkways, and bus/train/ferry journeys, and also the expected fares. It is the API behind the journey planner on Auckland Transport's [website](https://at.govt.nz/bus-train-ferry/journey-planner/).
 
 The journey planner engine "knows" about Auckland's road and walkway network, the routes for buses, trains and ferries, all stops, and the public transport schedule. Routes, stops and schedule are all made public as part of the [GTFS API](../gtfs-api/) - in fact, the same published GTFS feed is regularly imported into the journey planner engine.
@@ -114,6 +118,10 @@ For bus, train and ferry modes:
 The `tripId` field refers to the [GTFS API](../gtfs-api/) Trip entity, and the `code` field within the stops list refers to the GTFS Stop entity.
 
 # Geo Coder
+
+{:refdef: .warning}
+The API for the geo coder is currently "public restricted", i.e. only available to partners. Please [contact us]() to either make it public, or get a partner access key.
+{:refdef}
 
 The geo coder API connects to an Auckland Transport geo coder service, which translates geographical locations (latitude, longitude) into addresses - called reverse encoding -, and vice versa - called forward encoding.
 
