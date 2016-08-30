@@ -1,0 +1,27 @@
+.info {
+  border-color: #9EB6D4;
+  background-color: #E0EFFF;
+}
+
+.tip {
+  border-color: #9EC49F;
+  background-color: #DDFADE;
+}
+
+.warning {
+  border-color: #DF9898;
+  background-color: #FFE7E7;
+}
+
+.note {
+  border-color: #F7DF92;
+  background-color: #FFFFDD;
+}
+
+.info, .tip, .warning, .note {
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 5px;
+  color: black;
+  padding: 10px;
+}
