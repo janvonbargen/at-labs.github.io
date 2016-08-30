@@ -1,0 +1,130 @@
+---
+title: Tools API
+short: Getting started with the Tools API
+layout: post
+category: gettingstarted
+section: api
+index: 40
+date: 2016-08-15 16:00:00 +1200
+
+---
+
+The tools API covers miscellaneous "tools" - at the moment, the journey planner and the geo coder.
+
+# Journey Planner
+
+The journey planner API, as the name suggests, connects to an Auckland Transport system that allows users to plan their journeys. Given a start and end point, time, and some preferences, it calculates a few suggestions for journeys, including walkways, and bus/train/ferry journeys, and also the expected fares. It is the API behind the journey planner on Auckland Transport's [website](https://at.govt.nz/bus-train-ferry/journey-planner/).
+
+The journey planner engine "knows" about Auckland's road and walkway network, the routes for buses, trains and ferries, all stops, and the public transport schedule. Routes, stops and schedule are all made public as part of the [GTFS API](../gtfs-api/) - in fact, the same published GTFS feed is regularly imported into the journey planner engine.
+
+The fares are added to the journey suggestions by Auckland Transport fare calculator (application).
+
+The response from the journey planner API contains a few structures:
+
+**Itinerary**
+
+An itinerary is the suggested trip end-to-end from the given start point to the given end point. It contains the expected start and end times, the duration, the expected fare, and one or more *legs* (see below).
+
+The (shortened) structure looks like this:
+
+```json
+{
+   "duration": ...,
+   "startTime": "...",
+   "endTime": "...",
+   ...
+   "fareAdult": ...,
+   "fareChild": ...,
+   "fareHopAdult": ...,
+   "fareHopChild": ...,
+   "fareHopTertiary": ...,
+   "legs": [...]
+}
+```
+
+**Leg**
+
+A leg is a segment or section of a journey on a particular service (bus/train/ferry), or a walkway. All modes of legs, like the itinerary, contain start and end times, the duration, the fare, and also the geographical locations of start and end.
+
+The (shortened) structure looks like this:
+
+```json
+{
+   "startTime": "...",
+   "endTime": "...",
+   "duration": ...,
+   "from": "...",
+   "to": "...",
+   ...
+   "fareAdult": ...,
+   "fareChild": ...,
+   "fareHopAdult": ...,
+   "fareHopChild": ...,
+   "fareHopTertiary": ...,
+   "mode": "WALK|BUS|TRAIN|FERRY",
+   ...
+   "legGeometry": {
+      "points": "...",
+      "length": ...
+   }
+}
+```
+
+The `legGeometry` is using Google's [polyline encoding algorithm](https://developers.google.com/maps/documentation/utilities/polylinealgorithm) to encode the leg's travel path. Popular JavaScript map libraries like [Leaflet](http://leafletjs.com/) support this format either directly, or through plugins.
+
+Further, depending on the mode (walk/bus/train/ferry) of a leg,  the API returns additional data:
+
+For walk mode:
+
+```json
+{
+   ...
+   "distance": "...",
+   "distanceExact": ...,
+   "mode": "WALK",
+   ...
+}  
+```
+
+For bus, train and ferry modes:
+
+```json
+{
+   ...
+   "routeCode": "...",
+   "routeName": "...",
+   "tripId": "...",
+   "mode": "BUS",
+   ...
+   "stops": [
+      {
+         "code": "...",
+         "geometry": {
+            "type": "point",
+            "data": [...],
+            "encoded": true|false
+         }
+      },
+      ...
+   ],
+   ...
+}
+```
+
+The `tripId` field refers to the [GTFS API](../gtfs-api/) Trip entity, and the `code` field within the stops list refers to the GTFS Stop entity.
+
+# Geo Coder
+
+The geo coder API connects to an Auckland Transport geo coder service, which translates geographical locations (latitude, longitude) into addresses - called reverse encoding -, and vice versa - called forward encoding.
+
+Please note that the translation process of the geo coder is quite resource-intensive. Frequent calls to the API can cause the process to slow down - for all users. The backend service is not easy to scale - so use it wisely, and in moderation.
+
+## Reverse Encoding
+
+The reverse encoding API, as noted above, translates a given geographical location into addresses. The geocoder uses an internal algorithm to return not only the exact address, but also surrounding addresses, and public transport stops.
+
+## Forward Encoding
+
+The forward encoding API, indirectly, has two functions: First, as noted above, to translate addresses into geographical locations. Secondly, as it uses a given search string, it also works to distinguish between streets that share the same name, e.g. Drake Street in Auckland Central, and Drake Street in Howick.
+
+The geocoder also has (limited) understanding of intersections and public transport stops: Search queries that start with or contain "corner", "cnr", "and", "&" or "&&" are interpreted as an intersection. The geo coder will also try to interpret search queries that only consist of numbers as public transport stops.

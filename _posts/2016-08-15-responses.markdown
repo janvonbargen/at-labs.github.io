@@ -3,6 +3,8 @@ title: Response and error handling
 short: How to read responses, and what errors look like
 layout: post
 category: gettingstarted
+section: general
+index: 30
 date: 2016-08-15 20:00:00 +1200
 
 ---
@@ -34,7 +36,7 @@ typeof cb === 'function' && cb({
 });
 ```
 
-If an error should occur, then the response will look like this:
+If an error should occur in the backend, then the response will look like this:
 
 ```json
 {
@@ -46,5 +48,16 @@ If an error should occur, then the response will look like this:
   }
 }
 ```
+
+API access errors, like insufficient permissions, are formatted differently, and look like this:
+
+```json
+{
+  "statusCode": ...,
+  "message": "..."
+}
+```
+
+The statusCode field matches the HTTP response status code.
 
 Should be fairly self-explanatory.

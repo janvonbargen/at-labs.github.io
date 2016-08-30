@@ -3,6 +3,8 @@ title: Locations API
 short: Getting started with the Locations API
 layout: post
 category: gettingstarted
+section: api
+index: 30
 date: 2016-08-15 16:00:00 +1200
 
 ---
@@ -36,7 +38,9 @@ Note the response of this API call is rather large. Please [contact us]() if you
 
 # Points of Interest
 
-== This is broken at the moment ==
+*This endpoint is out of order at the moment, because of changes to Auckland Transport's GIS system. Please [contact us]() if you would like to use it.*
+
+The points of interest API lists well-known public places.
 
 # Scheduled Works
 

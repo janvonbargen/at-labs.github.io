@@ -3,6 +3,8 @@ title: Authorisation
 short: How to authorise for the AT APIs
 layout: post
 category: gettingstarted
+section: general
+index: 20
 date: 2016-08-15 22:00:00 +1200
 
 ---

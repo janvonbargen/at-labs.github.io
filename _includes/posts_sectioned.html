@@ -1,0 +1,22 @@
+<!-- Portfolio Grid Section -->
+    <section id="blog" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+            {% for pagetag in page.showtags %}
+            <h1 class="">{{ pagetag }}</h1>
+            
+            {% assign posts = site.categories.[page.layout] | where: "section", pagetag | sort: "index" %}
+            
+            {% for post in posts %}
+                 <a href="{{ post.url | prepend: site.baseurl }}" title="Permalink to: {{ post.title }}" class="read-more">
+                     <div class="col-md-12 col-sm-12 blog-item">
+                            <h2 class="">{{ post.title | escape }}
+                            </h2>
+                            <p>{{ post.content | strip_html | truncatewords: 50 }} Read more &raquo;</p>
+                      </div>
+                  </a>
+            {% endfor %}
+            {% endfor %}
+            </div>
+        </div>
+    </section>

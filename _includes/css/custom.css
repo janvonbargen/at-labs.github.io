@@ -33,6 +33,25 @@
 	margin: 0px auto;
 }
 
+.blog-item > h2{
+	font-weight: 600;
+	color: #27425D;
+	
+}
+.blog-item > p{
+	color: #27425D;
+	
+}
+
+.blog-item:hover > h2{
+	font-weight: 600;
+	color: #378fe3;
+	
+}
+.blog-item:hover > p{
+	color: #378fe3;
+	
+}
 .header-content-inner.short{
 	margin-top: 90px;
 }

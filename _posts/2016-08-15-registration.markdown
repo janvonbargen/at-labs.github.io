@@ -3,6 +3,8 @@ title: Registration
 short: First things first - the sign-up
 layout: post
 category: gettingstarted
+section: general
+index: 10
 date: 2016-08-15 22:00:00 +1200
 
 ---
