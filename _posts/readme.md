@@ -1,10 +1,8 @@
 This directory contains all post-like content on AT Labs: Getting started, blog, etc. The implementation uses the `category` variable in the front matter (to use Jekyll's term) to determine where content should appear.
 
-The order is determined by the date in the `date` variable, also in the front matter.
-
 # Blog Content
 
-Blog content works as expected. Sample front matter looks like this:
+Blog content works as expected. The order is determined by the date in the `date` variable. Sample front matter looks like this:
 
 ```yaml
 ---
@@ -20,9 +18,7 @@ Don't forget the timezone, or it'll show different dates, and perhaps ordering, 
 
 # Getting Started Content
 
-Content for getting started works just like blog content, with a few gotchas. Just as blog content, the order is determined by the date. So we invent dates to achieve a particular order. The key date is 2016-08-15 - which is random; it is the date I started writing getting-started documentation.
-
-All getting started post "files" have the file name `2016-08-15-[title].markdown`. The API related posts have the `date` variable set to `2016-08-15 20:00:00 +1200`, the more generic posts have it set to `2016-08-15 22:00:00 +1200` - a bit of a hack, I know.
+Content for getting started works just like blog content, with a few gotchas. Different to the blog content, the order is determined by the `index` variable. The template also supports dividing the content into sections - determined by the `section` variable.
 
 Sample front matter:
 
@@ -32,8 +28,27 @@ title: Some API
 short: Some description
 layout: post
 category: gettingstarted
+section: api
+index: 40
 date: 2016-08-15 16:00:00 +1200
 ---
 ```
 
-TODO: Find a better way.
+To add a new section it needs to be added to the /gettingstarted.html page:
+
+```yaml
+---
+layout: gettingstarted
+showtags: [general, api]
+---
+```
+
+A further noteworthy extension is the introduction of information blocks (which render a block of text in a highlighted way). To use an information block it needs to be declared within a *refdef* block - inside of the markup:
+
+```
+{:refdef: .warning}
+Some information block text.
+{:refdef}
+```
+
+The styles available are "info", "tip", "warning" and "note".

@@ -1,8 +1,8 @@
-url: https://janvonbargen.github.io
+url: http://www.atlabs.xyz/
 baseurl: /at-labs.github.io
 
 # Site settings
-title: ATLab - Ideas for Auckland
+title: ATLabs - Ideas for Auckland
 email: test@domain.com
 description: "Test description."
 
@@ -14,19 +14,19 @@ highlighter: rouge
 social:
   - title: twitter
     url: http://twitter.com/
-  - title: facebook
-    url:
   - title: stack-overflow
     url: http://stackoverflow.com/questions/tagged/at
-  - title: bitbucket 
-    url: http://bitbucket.org/
+  - title: comments
+    url: https://gitter.im/at-labs/Lobby
+  - title: tasks
+    url: https://waffle.io/AT-Labs/at-labs.github.io
   - title: github
-    url: http://github.com/
+    url: http://github.com/AT-Labs
 
 # Postal address (add as many lines as necessary)
 address:
-  - line: 3481 Melrose Place
-  - line: Beverly Hills, CA 90210
+  - line: 34 Drake St,
+  - line: Auckland, 1010
 
 # Build settings
 markdown: kramdown

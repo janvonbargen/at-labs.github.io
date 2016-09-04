@@ -1,0 +1,6 @@
+.posttable th, .posttable td {
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  padding: 10px;
+}
