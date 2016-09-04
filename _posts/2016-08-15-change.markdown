@@ -3,7 +3,7 @@ title: AT is not going to change?
 short: Times are changing - how is Auckland Transport reacting to these challenges
 author: Jan von Bargen
 org: Propellerhead
-layout: post
+layout: post-date
 category: blog
 date: 2016-08-15 11:00:00 +1200
 
