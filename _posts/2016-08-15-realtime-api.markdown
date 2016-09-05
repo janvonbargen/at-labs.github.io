@@ -11,9 +11,8 @@ date: 2016-08-15 16:00:00 +1200
 
 The purpose of the Realtime API is to provide real-time data for all of Auckland's public transport modes: buses, trains and ferries.
 
-{:refdef: .note}
 At the time of writing, only real-time data from buses is available. The integration of real-time data is in progress, and ferries are planned.
-{:refdef}
+{: .note}
 
 Most of the public transport data available follow the model of Google's Realtime Transit Specification (GTFS Realtime). A good place to start is the [GTFS Realtime Reference](https://developers.google.com/transit/gtfs-realtime/reference/) - this will tell you a lot about the domain, for entities, trip updates, vehicle positions and alerts (to name the top-level structural elements).
 
@@ -52,15 +51,24 @@ At the moment, the feed is updated at least every 30 seconds. The GTFS Realtime 
 
 # Realtime API
 
-The Realtime API provides the aggregated results of the *Trip Update API*, the *Vehicle Position API*, and the *Alert API* - please refer to the subsequent sections for further details.
+The Realtime API provides the aggregated results of the *Trip Update API* (vehicle progress along a trip), the *Vehicle Position API* (positioning information for a vehicle), and the *Alert API* (notification of incidents) - please refer to the subsequent sections for further details.
 
 The API, by default, returns all updates, but query parameters can be specified to filter by vehicles or trips.
 
 # Trip Update API
 
-The Trip Update API provides progress updates for all vehicles within Auckland Transport's network. 
+The Trip Update API provides progress updates for all vehicles along a trip within Auckland Transport's network. 
 
 The API, by default, returns all updates, but query parameters can be specified to filter by vehicles or trips.
+
+## Trip Update
+
+> Real-time update on vehicle progress along a trip.
+
+According to the GTFS Realtime specification, the Stop Time Update has a cardinality of "repeated". The JSON feed only allows a single update - which is incorrect. Future versions of this API should fix this.
+{: .warning}
+
+The fields/structures `trip`, `vehicle` and `stop_time_update`, as well as `timestamp`, are provided. The optional and experimental `delay` field is omitted.
 
 ## Trip Descriptor
 
@@ -98,8 +106,53 @@ The `schedule_relationship` is always set to 0 (SCHEDULED) - the backend system 
 
 # Vehicle Position API
 
-TODO
+The Vehicle Position API provided real-time updates for all vehicles in the Auckland Transport network.
+
+## Vehicle Position
+
+> Real-time positioning information for a given vehicle.
+
+The fields/structures `trip`, `vehicle` and `position`, as well as `timestamp`, are provided. All other fields, like `stop_id`, are omitted.
+
+## Trip Descriptor
+
+> A descriptor that identifies an instance of a GTFS trip, or all instances of a trip along a route.
+
+Please see the *Trip Descriptor* section, part of the *Trip Update API*, above.
+
+For trip descriptors as part of the vehicle position messages, the field `start_time` is included.
+ 
+## Vehicle Descriptor
+
+> Identification information for the vehicle performing the trip.
+
+Please see the *Vehicle Descriptor* section, part of the *Trip Update API*, above.
+
+## Position
+
+> The geographic position of a vehicle.
+
+Both `latitude` and `longitude`, as per the GTFS Realtime specification, are included. The `bearing` is only provided if the AVL device on the bus provides it.
+
+The `odometer` and `speed` fields are currently not provided.
 
 # Alert API
 
-TODO
+The Alert API provides notifications for incidents across Auckland Transport's public transport network.
+
+## Alert
+
+> A notification of an incident in the public transit network.
+
+All fields for the alert entity are populated - including optional fields. English is the only translation available for the `url`, `header_text` and `description_text` fields.
+
+The `active_period` currently sets the `start` or `end` to "null", and doesn't omit them as per the GTFS Realtime specification. This may change in future.
+{: .warning}
+
+The alert entity also provides 2 extension elements:
+
+1. `is_show_header`: Indicates if the `header_text` should be displayed
+2. `level`: This field indicates the severity of the incident - similar to log entries. The value can be either of "Info", "Warning" or "Critical"
+
+These extensions are used internally and don't form part of the API contract. While they can be used, care should be taken as future versions of the API may refactor or remove them.
+{: .note}

@@ -43,12 +43,11 @@ showtags: [general, api]
 ---
 ```
 
-A further noteworthy extension is the introduction of information blocks (which render a block of text in a highlighted way). To use an information block it needs to be declared within a *refdef* block - inside of the markup:
+A further noteworthy extension is the introduction of information blocks (which render a block of text in a highlighted way). To use an information block it needs to be defined as a block attribute - inside of the markup:
 
 ```
-{:refdef: .warning}
 Some information block text.
-{:refdef}
+{: .warning}
 ```
 
 The styles available are "info", "tip", "warning" and "note".
