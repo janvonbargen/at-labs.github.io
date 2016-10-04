@@ -2,7 +2,7 @@
   displayCompany: ATLabs
   imageThumbUrl: travelAdvisor.jpg
   imageUrl: travelAdvisor.jpg
-  caption: App that shows transport information in auckland. It is available on <a href='https://play.google.com/store/apps/details?id=com.travelimpact'>Android</a>, <a href='https://itunes.apple.com/us/app/travel-advisory-app/id1156751905?ls=1&mt=8'>iOS</a>, and open-sourced on <a href='https://github.com/AT-Labs/traveladvisor'>GitHub</a>.
+  caption: Experimental App that uses the Notifications API to surface disruption information such as Roadworks & Bus Stop changes.  This is available on <a href='https://play.google.com/store/apps/details?id=com.travelimpact'>Android</a>, <a href='https://itunes.apple.com/us/app/travel-advisory-app/id1156751905?ls=1&mt=8'>iOS</a>, and open-sourced on <a href='https://github.com/AT-Labs/traveladvisor'>GitHub</a>.
 
 - displayName: AT Metro
   displayCompany: Auckland Transport
