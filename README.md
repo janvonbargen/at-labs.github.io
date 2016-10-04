@@ -1,4 +1,4 @@
-This is the github io page for ATLabs.
+This is the github.io page for ATLabs.
 
 #Blogging
 New posts should go into `_posts`, and the associcated images go to `blog/img`.

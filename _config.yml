@@ -3,7 +3,7 @@ url: http://www.atlabs.xyz/
 # Site settings
 title: ATLabs - Ideas for Auckland
 email: mailto:info@atlabs.xyz
-description: "Test description."
+description: "ATLabs - to create what's next for Auckland"
 
 timezone: Pacific/Auckland
 markdown: kramdown
@@ -15,8 +15,6 @@ social:
     url: http://twitter.com/
   - title: comments
     url: https://gitter.im/at-labs/Lobby
-  - title: tasks
-    url: https://waffle.io/AT-Labs/at-api
   - title: github
     url: http://github.com/AT-Labs
 
