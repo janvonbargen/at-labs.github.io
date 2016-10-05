@@ -3,8 +3,8 @@ baseurl: /at-labs.github.io
 
 # Site settings
 title: ATLabs - Ideas for Auckland
-email: test@domain.com
-description: "Test description."
+email: mailto:info@atlabs.xyz
+description: "ATLabs - to create what's next for Auckland"
 
 timezone: Pacific/Auckland
 markdown: kramdown
@@ -14,12 +14,8 @@ highlighter: rouge
 social:
   - title: twitter
     url: http://twitter.com/
-  - title: stack-overflow
-    url: http://stackoverflow.com/questions/tagged/at
   - title: comments
     url: https://gitter.im/at-labs/Lobby
-  - title: tasks
-    url: https://waffle.io/AT-Labs/at-labs.github.io
   - title: github
     url: http://github.com/AT-Labs
 
@@ -29,5 +25,4 @@ address:
   - line: Auckland, 1010
 
 # Build settings
-markdown: kramdown
 permalink: pretty

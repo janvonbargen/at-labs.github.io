@@ -17,5 +17,5 @@ To use an API, you will need to subscribe to it: Go to "products", and select th
 
 You can use either of these keys for your application - they are there if you want to switch to a new key for an upgrade (rolling upgrades), or to grant temporary access. See the [Microsoft Azure Team Blog](https://blogs.msdn.microsoft.com/mast/2013/11/06/why-does-an-azure-storage-account-have-two-access-keys/) for details.
 
-Once you have an app production-ready, you may need more calls than the "developers" product allows. Please get in [contact]() with us then (preferably a bit earlier), so we can check that we have enough resources for your app.
+Once you have an app production-ready, you may need more calls than the "developers" product allows. Please get in [contact](mailto:info@atlabs.xyz) with us then (preferably a bit earlier), so we can check that we have enough resources for your app.
 

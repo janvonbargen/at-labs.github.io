@@ -1,5 +1,5 @@
 ---
-title: Welcome to AT Labs
+title: Welcome to ATLabs
 short: Come and have a look at how you can contribute to Auckland Transport with your ideas!
 author: Jan von Bargen
 org: Propellerhead
@@ -29,7 +29,7 @@ For now, we decided to make this about people with ideas for software applicatio
 
 **Idea contributions**
 
-Do you have an idea that will revolutionise transport? Or a seemingly small improvement that will make our lives so much better? Great, we want to hear them all - this is what our [ideas forum]() is about. We are here to connect the idea with people with expertise in this area, and people who can implement it. If the idea is a good one, then there should be no problem finding many helping hands - and we'll chip in too, wherever we can.
+Do you have an idea that will revolutionise transport? Or a seemingly small improvement that will make our lives so much better? Great, we want to hear them all - this is what our [ideas forum](https://gitter.im/at-labs/Lobby) is about. We are here to connect the idea with people with expertise in this area, and people who can implement it. If the idea is a good one, then there should be no problem finding many helping hands - and we'll chip in too, wherever we can.
 
 We understand that your idea is important to you - especially if it is an idea for a new product or service. We want to keep you engaged throughout the implementation cycle, and credit you for your idea. However, we also want to make your idea the best it can be, so we take the opinions of our experts strongly into consideration. This collaboration means your idea might not turn out exactly as you envisioned, but hopefully better.
 
@@ -39,10 +39,10 @@ Please note that this is about ideas for software applications. While we all wou
 
 At heart, we are coders too. We understand that this strange combination of working out software challenges, perhaps while learning a new language or technology, and seeing something coming out that people use, and like to use, is very fulfilling. This is why we go to work, and to bed way too late at night.
 
-Do you have an idea, but don't know how to go about it? Leave us a message in the [ideas forum](), and we'll be in contact. And if you are looking for ideas: Join us at the same forum, there ought to be something for you.
+Do you have an idea, but don't know how to go about it? Leave us a message in the [ideas forum](https://gitter.im/at-labs/Lobby), and we'll be in contact. And if you are looking for ideas: Join us at the same forum, there ought to be something for you.
 
-Useful next steps are to look in the [getting started]() section, and have a look through the [API]() to see what data is available. We put some [sample code]() up, so you can get some insights on how to use the API. If you have a question, need some help - or perhaps missing data, let us know through the [developer forum](). It works pretty much like Stack Exchange, so no surprises there.
+Useful next steps are to look in the [getting started]({{ site.url }}gettingstarted) section, and have a look through the [API](https://dev-portal.at.govt.nz/) to see what data is available. We put some [sample code](http://github.com/AT-Labs) up, so you can get some insights on how to use the API. If you have a question, need some help - or perhaps missing data, let us know through the [developer forum](http://github.com/AT-Labs). It works pretty much like Stack Exchange, so no surprises there.
 
-We haven't (yet) worked out exactly how getting your code shipped will work. Generally speaking, we'd like the code to stay your code. Just create some project repository with your repo provider of choice (we like [github](https://github.com/)) - or fork [our ones](). If you need help with your code, continuous integration, testing, infrastructure, or getting it into an app store, get in [contact]() with us, and we should be able to help you out.
+We haven't (yet) worked out exactly how getting your code shipped will work. Generally speaking, we'd like the code to stay your code. Just create some project repository with your repo provider of choice (we like [github](https://github.com/)) - or fork [our ones](http://github.com/AT-Labs). If you need help with your code, continuous integration, testing, infrastructure, or getting it into an app store, get in [contact](mailto:info@atlabs.xyz) with us, and we should be able to help you out.
 
 We are looking to work out a better process for this - but would like to take your inputs on how you think it should work. Stay tuned.

@@ -34,11 +34,11 @@ The customer service centre API, pretty much as the name suggests, lists availab
 
 The parking API lists all Auckland Transport managed (i.e. not the ones operated by Wilson Parking and others) parking buildings and spaces, including facilities for mobility parking.
 
-Note the response of this API call is rather large. Please [contact us]() if you are after something particular, like a search function.
+Note the response of this API call is rather large. Please [contact us](mailto:info@atlabs.xyz) if you are after something particular, like a search function.
 
 # Points of Interest
 
-*This endpoint is out of order at the moment, because of changes to Auckland Transport's GIS system. Please [contact us]() if you would like to use it.*
+*This endpoint is out of order at the moment, because of changes to Auckland Transport's GIS system. Please [contact us](mailto:info@atlabs.xyz) if you would like to use it.*
 
 The points of interest API lists well-known public places.
 
@@ -46,4 +46,4 @@ The points of interest API lists well-known public places.
 
 The scheduled works API, again as the name suggests, lists all scheduled works across the Auckland Transport managed road network (which btw excludes the motorways; these are NZTA-managed). The API returns additional geographical details, like if a particular area is affected, as well as planned start and end dates, contractor details, etc.
 
-Note the response of this API call is rather large (the contractors are busy). Please [contact us]() if you are after something particular, like a search function.
+Note the response of this API call is rather large (the contractors are busy). Please [contact us](mailto:info@atlabs.xyz) if you are after something particular, like a search function.

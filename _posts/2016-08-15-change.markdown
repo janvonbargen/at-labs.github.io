@@ -9,13 +9,13 @@ date: 2016-08-15 11:00:00 +1200
 
 ---
 
-We are just getting started - through AT Labs, we envision ideas to emerge from all sides, either under the umbrella of Auckland Transport or as new businesses, to advance the future of Auckland
+We are just getting started - through ATLabs, we envision ideas to emerge from all sides, either under the umbrella of Auckland Transport or as new businesses, to advance the future of Auckland
 
 It's one of those favourite past time activities of Aucklanders: Complaining about the inefficiencies of Auckland Council, and, in this context, Auckland Transport (yes, we know, we live here too). Everybody, when asked, has their points of contention, things they would do better/different, if only they were in charge.
 
 While there are ways to engage, in the past these were only for the most determined of us, and the result often didn't look anything like the proposal. Too many cooks, as the saying goes.
 
-With the new AT Labs, we are aiming to improve that - starting with the digital space.
+With the new ATLabs, we are aiming to improve that - starting with the digital space.
 
 # This is just the start
 
@@ -23,15 +23,15 @@ Auckland Transport's digital channels, admittedly, are rather basic: A website c
 
 We realise this is just the start.
 
-A lot more can be done. How often do you think: "If only we had ..."? With AT Labs, we'd like to help you make these ideas become a reality, by connecting people with ideas to people who can make these ideas come alive - and with people who have some expertise in this: us. We start with what most ideas require: data. We can provide data about roads, traffic, schedules, geographical positions, routes. Let us know if you need anything else that we might have. And even if we don't have the data: Ask anyway, and we'll try to get it.
+A lot more can be done. How often do you think: "If only we had ..."? With ATLabs, we'd like to help you make these ideas become a reality, by connecting people with ideas to people who can make these ideas come alive - and with people who have some expertise in this: us. We start with what most ideas require: data. We can provide data about roads, traffic, schedules, geographical positions, routes. Let us know if you need anything else that we might have. And even if we don't have the data: Ask anyway, and we'll try to get it.
 
 # Auckland Transport is changing
 
 Auckland Transport's "mission" is to provide the transport infrastructure to make Auckland the most liveable city. Since its inception, AT has been working on this, somewhat in isolation. Without trying to make excuses, this has been because tools and processes to integrate ideas and feedback have not been available, or usable. Coming up with, and implementing new ideas has always been a lengthy, and expensive process.
 
-APIs, one of the cornerstones of AT Labs, are changing this, together with advances in technology. Digital products are always a combination of infrastructure, logic and data. Finally, infrastructure has become flexible and inexpensive enough to just "try". APIs can provide the data required to power ideas - so we are really only missing the logic/ideas.
+APIs, one of the cornerstones of ATLabs, are changing this, together with advances in technology. Digital products are always a combination of infrastructure, logic and data. Finally, infrastructure has become flexible and inexpensive enough to just "try". APIs can provide the data required to power ideas - so we are really only missing the logic/ideas.
 
-Auckland Transport, with AT Labs, is changing to make the most out of these opportunities.
+Auckland Transport, with ATLabs, is changing to make the most out of these opportunities.
 
 Though, it's not only Auckland Transport that is changing ...
 

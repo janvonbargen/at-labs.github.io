@@ -116,9 +116,9 @@ Transfers are not used at the moment.
 
 # Fare Rules/Attributes
 
-Not in use, at the moment. Until recently, the fares structure for Auckland was too difficult to be accurately reflected in the GTFS fares structures. With the recent introduction of zone-based fares, this may now be possible. Please [contact us]() if this would be useful for your project.
+Not in use, at the moment. Until recently, the fares structure for Auckland was too difficult to be accurately reflected in the GTFS fares structures. With the recent introduction of zone-based fares, this may now be possible. Please [contact us](mailto:info@atlabs.xyz) if this would be useful for your project.
 
-Please also see the [Farecalculator API]() to get fares for trips.
+Please also see the [Farecalculator API](https://dev-portal.at.govt.nz/) to get fares for trips.
 
 # Feed Info
 

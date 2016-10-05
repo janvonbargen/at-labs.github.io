@@ -65,7 +65,9 @@
         },
         image: {
             titleSrc: function(item) {
-              return item.el.attr('title') + ' &middot; <a class="image-source-link caption" href="'+item.el.attr('data-source')+'" target="_blank">Link</a><br/><span class="caption">'+ item.el.attr('caption') +'</span>';
+                var linkStr = item.el.attr('data-source')?'&middot;<a class="image-source-link caption" href="'+item.el.attr('data-source')+'" target="_blank">Link</a>':'';
+
+              return item.el.attr('title')  +linkStr+ '<br/><span class="caption">'+ item.el.attr('caption') +'</span>';
             }, 
 
             tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'

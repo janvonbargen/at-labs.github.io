@@ -11,7 +11,7 @@ date: 2016-08-15 22:00:00 +1200
 
 Well, we'd like to be perfect, everything is working as designed all the time ... but, you know: stuff happens ... occasionally ... it is complicated ... it was the dog. 
 
-There are two "categories" of known issues: API related, and atlabs related. API related issues (e.g. slow, wrong data, error messages) are managed by Auckland Transport, while atlabs related issues are our domain. We do, however, have good connections into Auckland Transport, and part of the team that is running atlabs is also supporting Auckland Transport's API. So there you go: any issues, [contact us](), easy as.
+There are two "categories" of known issues: API related, and ATLabs related. API related issues (e.g. slow, wrong data, error messages) are managed by Auckland Transport, while ATLabs related issues are our domain. We do, however, have good connections into Auckland Transport, and part of the team that is running ATLabs is also supporting Auckland Transport's API. So there you go: any issues, [contact us](mailto:info@atlabs.xyz), easy as.
 
 Here are the things we know about:
 

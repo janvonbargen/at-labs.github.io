@@ -1,4 +1,4 @@
-This directory contains all post-like content on AT Labs: Getting started, blog, etc. The implementation uses the `category` variable in the front matter (to use Jekyll's term) to determine where content should appear.
+This directory contains all post-like content on ATLabs: Getting started, blog, etc. The implementation uses the `category` variable in the front matter (to use Jekyll's term) to determine where content should appear.
 
 # Blog Content
 
