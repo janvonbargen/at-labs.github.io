@@ -9,7 +9,7 @@ date: 2016-10-05 16:00:00 +1200
 
 ---
 
-Good turnout for last night's Auckland's API and Microservices meetup, the first time we presented the ATLabs concepts to the outside world (well, around 50 ...). We received some good feedback, with ideas already flowing how we can improve transport in Auckland.
+Good turnout for last night's Auckland's API and Microservices meetup, the first time we presented the ATLabs concepts to the outside world (well, around 50 ...). We received some good feedback, with ideas already flowing how we can improve transport in Auckland - keep them coming through our [gitter chat](https://gitter.im/at-labs/Lobby).
 
 Personally speaking, I'm quite relieved that it went well. Quite a few evenings in addition to my "regular" job went into thinking about how to present ATLabs to a group of (mostly) software developers - particularly since this wasn't a talk about technical details, but to explain the idea of a community that forms a partnership with public entities like Auckland Transport.
 
