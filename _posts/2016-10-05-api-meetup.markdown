@@ -15,7 +15,7 @@ Personally speaking, I'm quite relieved that it went well. Quite a few evenings 
 
 Thank you to all who attended:
 
-![Meetup Crowd](../../../../img/api-meetup.png)
+![Meetup Crowd]({{ site.baseurl }}/blog/img/api-meetup.png)
 
 The pdf of the presentation can be found [here](https://drive.google.com/file/d/0B4NqZ2rr-s1PRDVOY1ItOG5GblU/view?usp=sharing).
 
