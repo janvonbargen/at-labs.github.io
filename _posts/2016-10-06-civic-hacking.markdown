@@ -15,7 +15,7 @@ date: 2016-10-06 14:00:00 +1200
 
 I have spent a lot of time explaining the concept of ‘hacking’ to people who have only heard the term used in relation to dubious practices on the internet. I pondered what might be a suitable analogy for describing ‘hacking’ to people who spend a large amount of their time looking at vehicles, and came up with this:
 
-![](../../../../img/civic-hacking-01.png)
+![]({{ site.baseurl }}/blog/img/civic-hacking-01.png)
 
 Maybe it was because my dad was a hot rodder when he was young, but I am a total fan of grungy functional things that exude personality, rather than the more civilised precision things that look too pretty to be messed with! Which is an interesting insight in itself — things often need to be a little worn out or broken before people have the urge to mess with them.
 
@@ -23,7 +23,7 @@ Maybe it was because my dad was a hot rodder when he was young, but I am a total
 
 In the civic hacking scene, there are basically three forms of hacking — software hacks, hardware hacks, and non-tech hacks. Software hackers are kind of like custom car painters — they totally transform the look and feel of the vehicle, making people want to spend time cruising the streets showing off!
 
-![](../../../../img/civic-hacking-02.png)
+![]({{ site.baseurl }}/blog/img/civic-hacking-02.png)
 
 Hardware hackers are the equivalent of the grease monkeys that get down and dirty to turn their machines into white-knuckled rides to adrenaline heaven.
 
@@ -33,13 +33,13 @@ Then there are the non-tech folks. They are the ‘makers’ who can re-imagine 
 
 Hacking is actually something that has been done by traffic engineers for decades — it’s just not a term that they use. Long before the concrete for new roads, kerbs, and traffic islands is poured, temporary traffic management features are put in place to test driver behaviour. It also helps to know whether those large emergency service vehicles can negotiate the carriageway before the barriers are installed. In the same way that engineers experiment with new layouts, hacking is all about doing things lean.
 
-![](../../../../img/civic-hacking-03.png)
+![]({{ site.baseurl }}/blog/img/civic-hacking-03.png)
 
 # Inside the hacker ethos
 
 As I looked at the types of things that underpin the hackathon scene, there are a few things that jump out at me that could be described as a hacker’s ethos.
 
-![](../../../../img/civic-hacking-04.png)
+![]({{ site.baseurl }}/blog/img/civic-hacking-04.png)
 
 The people who participate in hackathons tend to be those that love to solve problems from a first person perspective, with a focus on getting shit done. These tend to be similar to those in the service design and ‘startup’ scene as well, which all tend to adopt a user-centred design (lean) approach to solving problems.
 
@@ -63,13 +63,13 @@ Each of these factors is probably more accurately described as ‘states’ or w
 
 Hacking is very effective way of solving problems. Why? Because it’s fast, it’s affordable, and it creates tangible solutions. In the same way that hot rods still attract stares and sideways glances from passers-by, hacking has a tendency to show up the establishment by drawing attention to things that would otherwise be taken for granted. There is nothing like a bit of public shaming to make an impact!
 
-![](../../../../img/civic-hacking-05.png)
+![]({{ site.baseurl }}/blog/img/civic-hacking-05.png)
 
 # You won’t beat them
 
 My take home message for the transport engineers is simple. Hacking is a thing, and they are setting about changing the world whether you like it or not. The best thing to do in this situation is of course to join them. Who’s up for a custom paint job?
 
-![](../../../../img/civic-hacking-06.png)
+![]({{ site.baseurl }}/blog/img/civic-hacking-06.png)
 
 
 
