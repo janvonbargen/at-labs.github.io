@@ -31,7 +31,7 @@ So that’s what civic-minded developers do, they give their skills, their time 
 
 It’s not for free; that’s for sure.
 
-At Hack Miramar, we believe there are 3 main drivers deep within developers that have them volunteering to help.
+At [Hack Miramar](http://www.hackmiramar.org/), we believe there are 3 main drivers deep within developers that have them volunteering to help.
 
 It’s a funny old world, engineering eh. It’s fast moving with today’s greatest development paradigm quickly becoming tomorrows “old world”. It’s also a slow moving world, with the problems of yesteryear still being the focus for many “IT departments” today.
 
