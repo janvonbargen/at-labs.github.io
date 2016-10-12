@@ -1,6 +1,6 @@
 ---
 title: Welcome to ATLabs
-short: Come and have a look at how you can contribute to Auckland Transport with your ideas!
+short: Come and have a look at how you can contribute to transport in Auckland with your ideas!
 author: Jan von Bargen
 org: Propellerhead
 layout: post-date
@@ -9,7 +9,7 @@ date: 2016-08-11 17:00:00 +1200
 
 ---
 
-Auckland Transport is looking after Auckland's transport network - roads & cycleways, traffic, parking, public transport. Until recently, though, it "did its thing" in a bit of an isolated way. This is where the Auckland Transport Innovation Portal comes in: we'd like to open up the digital side of Auckland Transport.
+Auckland Transport is looking after Auckland's transport network - roads & cycleways, traffic, parking, public transport. Until recently, though, it "did its thing" in a bit of an isolated way. This is where the ATLabs comes in: we'd like to open up the digital side of transport in Auckland.
 
 # Why are we doing this?
 
@@ -21,7 +21,7 @@ We like the idea of experiments: Better than committing to a year-long software 
 
 We know there are plenty of ideas "out there", plenty of people who would like to leave their mark on their city - and a whole lot of software developers who want to do more than customise reporting software, integrate financial transaction systems, or churn out one website after another.
 
-Auckland Transport is not for profit; it is to make you get to where you want to go. You aren't making somebody else rich - you are improving life in your city, and, who knows, perhaps even the life of people in cities around the world.
+ATLabs is not for profit; it is to make you get to where you want to go. You aren't making somebody else rich - you are improving life in your city, and, who knows, perhaps even the life of people in cities around the world.
 
 # How to contribute
 
@@ -41,7 +41,7 @@ At heart, we are coders too. We understand that this strange combination of work
 
 Do you have an idea, but don't know how to go about it? Leave us a message in the [ideas forum](https://gitter.im/at-labs/Lobby), and we'll be in contact. And if you are looking for ideas: Join us at the same forum, there ought to be something for you.
 
-Useful next steps are to look in the [getting started]({{ site.url }}gettingstarted) section, and have a look through the [API](https://dev-portal.at.govt.nz/) to see what data is available. We put some [sample code](http://github.com/AT-Labs) up, so you can get some insights on how to use the API. If you have a question, need some help - or perhaps missing data, let us know through the [developer forum](http://github.com/AT-Labs). It works pretty much like Stack Exchange, so no surprises there.
+Useful next steps are to look in the [getting started]({{ site.url }}gettingstarted) section, and have a look through the [Auckland Transport API](https://dev-portal.at.govt.nz/) to see what data is available. We put some [sample code](http://github.com/AT-Labs) up, so you can get some insights on how to use the API. If you have a question, need some help - or perhaps missing data, let us know through our [gitter chat](https://gitter.im/at-labs/Lobby).
 
 We haven't (yet) worked out exactly how getting your code shipped will work. Generally speaking, we'd like the code to stay your code. Just create some project repository with your repo provider of choice (we like [github](https://github.com/)) - or fork [our ones](http://github.com/AT-Labs). If you need help with your code, continuous integration, testing, infrastructure, or getting it into an app store, get in [contact](mailto:info@atlabs.xyz) with us, and we should be able to help you out.
 
