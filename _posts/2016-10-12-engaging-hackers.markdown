@@ -1,6 +1,6 @@
 ---
 title: Engaging civic-minded developers
-short: ???
+short: No-one works for free and yet civic-minded engineers volunteer their time & skills all the time, find out how to engage them for your event.
 author: Mike Riversdale
 org: Co-founder of Hack Miramar
 layout: post-date
@@ -23,7 +23,7 @@ Ok, a definition is needed for “civic tech”, and here’s mine:
 
 Here’s one example of such a problem/solution - there are too many taxis with one person driving from the airport thus creating traffic flow issues. Maybe we could create and disseminate an app to passengers that guides those going to the same destination into one cab - 4 cabs with 1 person is now 1 cab with 4 people. 
 
-This was an actual app, produced during a hackathon at which app developers, infrastructure experts, city planners and members of the community came together to use the Internet and open systems to sort out their problem.
+This was an actual app, produced during [a hackathon](http://www.hackmiramar.org/hack-v1/) at which app developers, infrastructure experts, city planners and members of the community came together to use the Internet and open systems to sort out their problem.
 
 ![]({{ site.baseurl }}/blog/img/engaging-hackers-01.jpg)
 
@@ -35,7 +35,7 @@ At Hack Miramar, we believe there are 3 main drivers deep within developers that
 
 It’s a funny old world, engineering eh. It’s fast moving with today’s greatest development paradigm quickly becoming tomorrows “old world”. It’s also a slow moving world, with the problems of yesteryear still being the focus for many “IT departments” today.
 
-In this fast yet slow world of the professional developers' world, there is a freedom in “civic tech”. Rarely are traditional problems presented, these are for the Council, the Government agency, “them” to sort out, but civic tech attracts difficult problems or even wicked problems calling on a multitudes of skills, with data from here mashed with systems from there and hung together with a language at the very cutting edge of tech.
+In this fast yet slow world of the professional developers' world, there is a freedom in “civic tech”. Rarely are traditional problems presented, these are for the Council, the Government agency, “them” to sort out, but civic tech attracts difficult problems or even [wicked problems](https://en.wikipedia.org/wiki/Wicked_problem) calling on a multitudes of skills, with data from here mashed with systems from there and hung together with a language at the very cutting edge of tech.
 
 **Developers love to show you what they can do**, and how fast and how beautifully. And civic developer will gladly “do their thing”, stretch their technical wings as long as peer recognition is forthcoming because they love people.
 
@@ -57,4 +57,4 @@ So how do you engage with developers, how do we grow the pool of ‘civic develo
 
 No-one wants to work for free, but everyone wants to grow, make a difference and solve problems.
 
-[^n]: local, defined how you want. We in Hack Miramar are focussed on Miramar and then Wellington but also know we’re a part of a wider ‘local’ called New Zealand - we’re too small to do it alone.
+[^n]: local, defined how you want. We in [Hack Miramar](http://www.hackmiramar.org/) are focussed on Miramar and then Wellington but also know we’re a part of a wider ‘local’ called New Zealand - we’re too small to do it alone.
