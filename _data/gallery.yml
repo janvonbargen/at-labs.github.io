@@ -15,3 +15,9 @@
   imageThumbUrl: trackMyBus.jpg
   imageUrl: trackMyBus.png
   caption: App that allows user to save their favorite bus stops to easily find when the next bus is arriving. Available on <a href='https://play.google.com/store/apps/details?id=com.ionicframework.athopapp712769'>Android</a> and <a href='https://itunes.apple.com/nz/app/at-metro-track-my-bus/id934638916?mt=8'>iOS</a>.
+
+- displayName: DYMAJOTransit
+  displayCompany: DYMAJO Ltd
+  imageThumbUrl: DYMAJO.jpg
+  imageUrl: DYMAJO.png
+  caption: App that allows finding stations around Auckland! More information at <a href='http://transit.dymajo.com'>DYMAJO</a>. The code is opensourced <a href='https://github.com/consindo/dymajo-transit'>here</a>. 
