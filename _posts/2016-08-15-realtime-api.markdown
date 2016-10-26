@@ -11,7 +11,7 @@ date: 2016-08-15 16:00:00 +1200
 
 The purpose of the Realtime API is to provide real-time data for each of Auckland's public transport modes: buses, trains and ferries.
 
-At the time of writing, only real-time data for buses is available. Integration of real-time data is in progress, and ferries are planned.
+At the time of writing, only real-time data for buses is available. Integration of real-time train data is in progress, and ferries are planned.
 {: .note}
 
 Most of the public transport data available follow the model of Google's Realtime Transit Specification (GTFS Realtime). A good place to start is the [GTFS Realtime Reference](https://developers.google.com/transit/gtfs-realtime/reference/). This will tell you a lot about the domain: entities, trip updates, vehicle positions and alerts (to name the top-level structural elements).
